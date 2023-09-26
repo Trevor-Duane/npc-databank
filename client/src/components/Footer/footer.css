@@ -1,0 +1,46 @@
+.footerSection {
+  background-color: #43d4be;
+  height: auto;
+  width: 100%;
+  position: sticky;
+  align-items: center;
+  display: flex;
+  bottom: 0;
+}
+.footerItemsWrapper {
+    width: 60%;
+    margin: 2rem auto auto auto;
+    display: flex;
+    align-items: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    text-rendering: optimizeLegibility;
+    justify-content: space-between;
+}
+.footerAboutItem{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.footerAboutItem h6{
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: bold;
+}
+.footerAboutItem p{
+    font-weight: 300;
+    color: #fff;
+}
+.footerItemCenter ul{
+    text-decoration: none;
+}
+.footerItemCenter ul li{
+    color: #fff;
+    margin: 2px;
+}
+.footerItemSocial p{
+    color: #fff;
+    font-weight: 700;
+}
+.socialMedisLink{
+    margin-left: 8px;
+}

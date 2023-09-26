@@ -1,0 +1,101 @@
+.detailsSection{
+    background-color: #F5F5F5;
+  
+  }
+  .pageBreadCrumb{
+      /* margin: 6px 10px; */
+  }
+  .pageBreadCrumb nav{
+      /* padding: 0px 4px; */
+      /* margin: 4px; */
+  }
+  .breadcrumb-not-active {
+      /* color: #cccccc; */
+      color: #43d4be;
+    }
+    
+    .breadcrumb-active {
+      color: #000000;
+    }
+    
+    .breadcrumb-arrow {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .populationSectionHead{
+      /* margin-left: -10px; */
+      margin-top: 1rem;
+  
+    }
+  .populationSectionHead h4{
+      font-size: 1.938rem;
+      font-weight: 700;
+      color: #43d4be;
+  }
+  .populationSectionText p{
+      color: #7f7f7f;
+      font-size: 16px;
+      font-weight: 300;
+  }
+  .populationSectionContent{
+      background-color: #fff;
+  }
+  /* Style the tab */
+  .tab {
+      float: left;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+      width: 30%;
+      height: 300px;
+    }
+    .tablink{
+      background-color: none;
+      color: #43d4be;
+    }
+    .tablink:active{
+      background-color: #ccc;
+      border-left: #43d4be;
+    }
+    .tablink:hover{
+      background-color: #ddd;
+  
+    }
+    .active-tablink{
+      background-color: #ccc;
+      border-left: 1px solid #43d4be;
+  
+    }
+    /* Style the buttons that are used to open the tab content */
+    .tab button {
+      display: block;
+      background-color: inherit;
+      color: black;
+      padding: 22px 16px;
+      width: 100%;
+      border: none;
+      outline: none;
+      text-align: left;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    
+    /* Style the tab content */
+    .tabcontent {
+      float: left;
+      padding: 0px 12px;
+      border: 1px solid #ccc;
+      display: none;
+      width: 70%;
+      border-left: none;
+      height: 300px;
+    }
+    .active-tabcontent {
+      display: block;
+      /* float: left;
+      padding: 0px 12px;
+      border: 1px solid #ccc;
+      width: 70%;
+      display: block;
+      border-left: none;
+      height: 300px; */
+    }

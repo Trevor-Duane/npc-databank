@@ -1,20 +1,296 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"); */
 
-body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Lato", sans-serif;
-  /* text-align: center; */
+/* styles for the home page */
+
+.about-us{
+  padding: 8px 0px;
+  flex-direction: column;
+  justify-content: center;
+  position: static;
+
 }
-
-.home,
-.reports,
-.products {
+.aboutHeader{
+  background-color: #49453E;
   display: flex;
-  height: 90vh;
   align-items: center;
   justify-content: center;
-  font-size: 3rem;
+  height: 30px;
 }
+.aboutHeader span{
+  color: #fff;
+  font-weight: bold;
+}
+.aboutInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.aboutVisionCol, .aboutMissionCol{
+  display: block;
+}
+.aboutVisionTitle, .aboutMissionTitle{
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  color: #49453e;
+  font-weight: bold;
+  background-color: #FAf9f6;
+  height: 30px;
+  text-align: center;
+
+}
+.aboutVisionText, .aboutMissionText{
+  font-size: .9rem;
+  padding: 4px;
+  margin: 4px;
+}
+
+/* ...............................................Analytics Section.................................... */
+
+.analyticsSectionHead{
+  background-color: #49453E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+}
+.analyticsSectionHead span{
+  color: #fff;
+  font-weight: bold;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+
+.home-content{
+  display: grid;
+  align-items: start;
+  justify-content: center;
+}
+
+.current-population{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+}
+.spans-section{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.spans-section > div:first-of-type{
+  border-bottom: 1px solid #ddd;
+  background-color: #FAF9F6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  color: #49453E;
+  padding: 10px 0px;
+  /* height: 30px; */
+  width: 100%;
+
+}
+.spans-section > div:nth-of-type(2){
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  /* height: 80px; */
+  font-weight: bold;
+  color: #49453E;
+  width: 100%;
+
+}
+.pie-graph{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.pie-center{
+  padding: 1rem;
+  line-height: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.pie-left{
+  flex: 1 1 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.pie-right{
+  padding-top: 8px;
+  border-left: 1px solid #ddd;
+  flex: 1 1 0;
+}
+.pie-right > div:first-of-type{
+  border-bottom: 1px solid #ddd;
+
+}
+.pie-right span{
+  font-weight: bold;
+
+}
+.pie-right p{
+  font-size: .9rem;
+  padding: 4px;
+  margin: 4px;
+}
+
+/* ---------------------------second section--------------------------------- */
+.population-pyramid{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+}
+.population-pyramid > div:first-of-type{
+  border-bottom: 1px solid #ddd;
+  /* background-color: #FAF9F6; */
+  /* justify-content: space-between; */
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  /* font-weight: bold; */
+  /* color: #49453E; */
+  /* height: 30px; */
+
+}
+.pyramid-graph{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.pyramid-left{
+  flex: 1 1 0;
+
+}
+.pyramid-right{
+  flex: 1 1 0;
+  padding-top: 8px;
+  border-left: 1px solid #ddd;
+
+}
+.pyramid-right > div:first-of-type{
+  border-bottom: 1px solid #ddd;
+
+}
+.pyramid-right span{
+  font-weight: bold;
+}
+.pyramid-right p{
+  font-size: .9rem;
+  padding: 4px;
+  margin: 4px;
+}
+
+/* -------------------------------third section---------------------------------------------- */
+/* .................common Styles........................... */
+.sectionWrapper{
+  margin: 2rem 0rem;
+  display: flex;
+  column-gap: 1rem;
+}
+.leftSection{
+  flex: 1;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+
+}
+.rightSection{
+  flex: 1;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+.rightSectionDisabled{
+  flex: 1;
+  /* box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px; */
+}
+.graphWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  /* margin: 4rem 4rem; */
+}
+
+/* ---------------------------line-section11-------------------- */
+.line-section1{
+  margin-top: 2rem;
+  display: flex;
+  /* background-color: #43d4be; */
+  column-gap: 1rem;
+  height: auto;
+}
+.line-left{
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  flex: 1 1 0;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+
+}
+.line-left > div:first-of-type{
+  border-bottom: 1px solid #ddd;
+  background-color: #FAF9F6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  color: #49453E;
+  height: 30px;
+
+}
+.spanButton{
+  background-color: #43d4be;
+  /* background-color: #49453e; */
+  cursor: pointer;
+  font-size: .8rem;
+  padding: 5px;
+  color: #FAF9F6;
+  color: #49453e;
+  /* color: #43d4be; */
+}
+.spanButton2{
+  background-color: #43d4be;
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  justify-content: baseline;
+  cursor: pointer;
+  font-size: .8rem;
+  padding: 5px;
+  color: #49453e;
+}
+.line-right{
+  flex: 1 1 0;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+
+}
+.line-right > div:first-of-type{
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  background-color: #FAF9F6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  color: #49453E;
+  height: 30px;
+}
+.sex-ratio{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+

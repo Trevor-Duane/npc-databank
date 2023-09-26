@@ -1,0 +1,104 @@
+.pageBreadCrumb {
+  /* margin: 6px 10px; */
+}
+.pageBreadCrumb nav {
+  /* padding: 0px 4px; */
+  /* margin: 4px; */
+}
+.breadcrumb-not-active {
+  color: #cccccc;
+  color: #43d4be;
+}
+
+.breadcrumb-active {
+  color: #000000;
+}
+
+.breadcrumb-arrow {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.pageSectionHead {
+  /* margin-left: -10px; */
+  margin-top: 1rem;
+}
+.pageSectionHead h4 {
+  font-size: 1.938rem;
+  font-weight: 700;
+  color: #43d4be;
+}
+.pageSectionText p {
+  color: #7f7f7f;
+  font-size: 16px;
+  font-weight: 300;
+}
+.pageSectionContent {
+  background-color: #fff;
+}
+.pageSectionRow{
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-between;
+
+}
+.pageSectionColLeft, .pageSectionColRight{
+  width: 49%;
+}
+.pageSectionColLeft p, .pageSectionColRight p{
+  font-style: italic;
+  width: auto;
+  font-size: 12px
+  
+  
+  ;
+  padding: 2px 0px;
+  color: #7f7f7f;
+}
+.pageSectionColLeft h6, .pageSectionColRight h6{
+  color: #43d4be;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+.pageSectionExplore{
+  margin: 5rem 0rem auto 0rem;
+  max-height: auto;
+  min-height: auto;
+}
+.pageSectionExploreHead{
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 2rem 0rem 2rem 0rem;
+  display: flex;
+  align-items: center;
+}
+.pageSectionExploreHead h4{
+  color: #43d4be;
+  font-size: 1.938rem;
+  font-weight: 700;
+  padding: 6px 0px 0px 0px;
+}
+.pageSectionExploreLinks{
+  margin: -10px 0px 10px 0px;
+}
+.pageSectionExploreLinks ul{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.pageSectionExploreLinks ul li{
+  list-style: circle;
+  background-color: #e8e8e8;
+  color: #43d4be;
+  cursor: pointer;
+  margin-top: 4px;
+  padding: 4px;
+}
+.pageSectionExploreLinks ul li:hover{
+  list-style: circle;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  color: #7f7f7f;
+  margin-top: 4px;
+  padding: 4px;
+}

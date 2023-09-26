@@ -1,32 +1,37 @@
-import logo from './logo.svg';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import NavigationBar from './components/Navbar/NavigationBar';
+
+// pages
 import Home from './pages/Home';
 import Population from './pages/Population';
-import './styles.css'
 import Economy from './pages/Economy';
 import Health from './pages/Health';
 import Metadata from './pages/Metadata';
 import Districtdata from './pages/Districtdata';
 import DocReports from './pages/DocReports';
+// components
+import Sidebar from './components/sidebar/Sidebar';
+
+// css
+import "./App.css";
+import MyFooter from './components/Footer/MyFooter';
 
 
 function App() {
   return (
-    <div className="App">
       <BrowserRouter>
-      <NavigationBar/>
+      <Sidebar>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/population" element={<Population/>}/>
-        <Route path="/economy" element={<Economy/>}/>
-        <Route path="/health" element={<Health/>}/>
+        <Route path="/population_indicators/population" element={<Population/>}/>
+        <Route path="/population_indicators/economy" element={<Economy/>}/>
+        <Route path="/population_indicators/health" element={<Health/>}/>
         <Route path="/metadata" element={<Metadata/>}/>
         <Route path="/districtdata" element={<Districtdata/>}/>
         <Route path="/docsandreports" element={<DocReports/>}/>
+        <Route path="*" element={<> not found </>}/>
       </Routes>
+      </Sidebar>
       </BrowserRouter>
-    </div>
   );
 }
 

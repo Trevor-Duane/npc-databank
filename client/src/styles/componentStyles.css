@@ -1,0 +1,119 @@
+/* .................Styles for the solid button reusable component................... */
+.solidStyle {
+  background-color: #43d4be;
+  cursor: pointer;
+  border: 1px solid #43d4be;
+  font: inherit;
+  color: #49453e;
+  display: inline-block;
+  padding: 10px;
+  margin: 6px;
+  border-radius: 6px;
+}
+.solidStyle:hover {
+  background-color: #49453e;
+  cursor: pointer;
+  border: 1px solid #49453e;
+  font: inherit;
+  color: #fff;
+  display: inline-block;
+  padding: 10px;
+  margin: 6px;
+  border-radius: 6px;
+}
+.outlineStyle {
+    border: 1px solid #49453e;
+    background-color: #fff;
+    cursor: pointer;
+    font: inherit;
+    padding: 10px;
+    color: #49453e;
+    display: inline-block;
+    margin: 6px;
+    border-radius: 6px;
+
+}
+.outlineStyle:hover {
+  background-color: #43d4be;
+  border: 1px solid #43d4be;
+  cursor: pointer;
+  font: inherit;
+  padding: 10px;
+  color: #fff;
+  display: inline-block;
+  margin: 6px;
+  border-radius: 6px;
+
+}
+
+/* .................Styles for the dropdown reusable component................... */
+.pyramidDropdown{
+    position: relative;
+    background-color: none;
+    padding: 10px;
+    color: #49453e;
+    font: inherit;
+    width: 90px;
+    border-radius: 6px;
+}
+.pyramidDropdown select{
+    display: none;
+    background-color: #49453e;
+}
+.pyramidDropdown select::after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* ......................................Sidecards...................................................... */
+
+
+.side-card{
+  display: flex;
+  /* background-color: #43d4be; */
+  margin: 10px;
+  height: auto;
+  justify-content: flex-start;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  align-items: flex-start;
+  flex-direction: column;
+
+}
+.sideCardHead span{
+ font-size: 1rem;
+ color: #49453e;
+ margin: 10px 5px;
+ padding: 6px 0px;
+}
+.sideCardDetails{
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+.sideCardMainText span{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.sideCardWeightText{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #43d4be;
+  margin-bottom: 6px;
+}
+.sideCardWeightText span{
+  margin-left: 2px;
+  font-size: 1.25rem;
+}
+.sideCardSecondaryText{
+  font-size: .75rem;
+  margin: 10px;
+}
